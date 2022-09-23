@@ -21,7 +21,7 @@ constructor(private accountService: AccountService) {}
 
   setCurrentUser() {
     const user: User = JSON.parse(localStorage.getItem('user'));
-    this.accountService.serCurrentUser(user)
+    this.accountService.setCurrentUser(user)
   }
 
 /** DEPRECATED USE BELOW INSTEAD

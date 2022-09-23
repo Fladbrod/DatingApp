@@ -10,7 +10,6 @@ namespace API.Middleware
         @params RequestDelegate What's coming up next in the middleware pipeline
         @params ILogger displays the exception in the terminal window. We give it the type of ExceptionMiddleWare
         @params IHostEnviroment what enviroment we're running in I.E production, development etc.
-        @params
         */
         private readonly RequestDelegate _next;
         private readonly ILogger<ExceptionMiddleware> _logger;
