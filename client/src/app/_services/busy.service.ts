@@ -1,6 +1,8 @@
 import { Injectable } from '@angular/core';
 import { NgxSpinnerService } from 'ngx-spinner';
 
+// For adding fake loading screen
+
 @Injectable({
   providedIn: 'root'
 })
