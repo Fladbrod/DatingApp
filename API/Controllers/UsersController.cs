@@ -26,7 +26,7 @@ namespace API.Controllers
             _userRepository = userRepository;
         }
 
-        // Get all users
+        // List of users
         [HttpGet]
         public async Task<ActionResult<IEnumerable<MemberDto>>> GetUsers([FromQuery] UserParams userParams)
         {
