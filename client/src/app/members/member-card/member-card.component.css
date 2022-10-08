@@ -36,8 +36,19 @@
     transition: all 0.3s ease-in-out;
 }
 
-/* To make buttons smaller in order to not stack in chrome qucik fix*/
+/* To make buttons smaller in order to not stack in chrome quick fix*/
 .btn {
     font-size: 1em;
     padding: 1em;
+}
+
+/*To make user icon blink*/
+@keyframes fa-blink {
+    0% {opacity: 1;}
+    100% {opacity: 0.4;}
+}
+
+.is-online {
+    animation: fa-blink 1.5s linear infinite;
+    color: rgb(1, 189, 42);
 }
